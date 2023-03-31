@@ -19,7 +19,8 @@ exports.handler = async (event, context) => {
     })
 
     const tokenData = await TokenData.findById(process.env.MONGO_TOKEN_ID);
-
+    
+    console.log(tokenData)
     const params = new URLSearchParams(event.body);
     const name = decodeURIComponent(params.get('name'));
     const email = decodeURIComponent(params.get('email'));
