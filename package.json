@@ -23,4 +23,3 @@
     "build": "./node_modules/.bin/netlify-lambda build server"
   }
 }
-
