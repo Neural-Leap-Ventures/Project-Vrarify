@@ -269,7 +269,7 @@
 }
 
 .div-block-3 {
-  width: 80%;
+  width: 60%;
 }
 
 .heading {
@@ -859,8 +859,8 @@
 }
 
 .hero-wrapper---contact {
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -870,7 +870,7 @@
 }
 
 .div-block-21 {
-  width: 50%;
+  width: 40%;
 }
 
 .div-block-22 {
@@ -878,7 +878,7 @@
   border-radius: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0 30px 15px;
 }
 
 .div-block-23 {
