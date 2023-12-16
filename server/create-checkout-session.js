@@ -3,10 +3,8 @@ require('dotenv').config();
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-// const success_url = "https://www.neuralleap.ai/thank-you.html";
-// const cancel_url = "https://www.neuralleap.ai/thank-you.html";
 const success_url = process.env.SUCCESS_URL;
-const cancel_url = process.env.SUCCESS_URL;
+const cancel_url = "https://vrarify.com/7-day-free-trial";
 const payment_options = process.env.PAYMENT_OPTIONS.split(',')
 
 console.log('ddd')
