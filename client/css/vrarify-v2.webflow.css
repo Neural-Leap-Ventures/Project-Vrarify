@@ -1,51 +1,8 @@
 :root {
   --vpurple: #3d427c;
   --vpurpledark: #1b1c57;
-}
-
-.w-checkbox {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  display: block;
-}
-
-.w-checkbox:before {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox:after {
-  content: " ";
-  clear: both;
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox-input {
-  float: left;
-  margin: 4px 0 0 -20px;
-  line-height: normal;
-}
-
-.w-checkbox-input--inputType-custom {
-  width: 12px;
-  height: 12px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: #3898ec;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
+  --white: white;
+  --black: black;
 }
 
 .home-bg {
@@ -938,6 +895,10 @@
   margin-bottom: 50px;
 }
 
+.h1-70px.text-center._1 {
+  font-size: 50px;
+}
+
 .max-width-980px {
   width: 100%;
   max-width: 980px;
@@ -970,8 +931,20 @@
   color: #222;
 }
 
+.page-subtitle.mt-50.font-20px.mt-new-30.text-black.text-medium {
+  font-weight: 500;
+}
+
 .page-subtitle.mt-50.font-20px.text-center {
   text-align: center;
+}
+
+.page-subtitle.mt-50.font-20px.text-center._1 {
+  font-size: 18px;
+}
+
+.page-subtitle.mt-50.font-20px.text-center._1._22 {
+  font-size: 22px;
 }
 
 .koc-card {
@@ -1188,6 +1161,10 @@
   line-height: 30px;
 }
 
+.paragraph-7.ol-a {
+  list-style-type: decimal;
+}
+
 .aboutus-bg {
   background-image: url('../images/about-bg.png');
   background-position: 100% 0;
@@ -1201,6 +1178,25 @@
   background-position: 0 0;
   background-repeat: repeat;
   background-size: auto;
+}
+
+.aboutus-bg._1 {
+  height: 75vh;
+  background-position: 90% 0;
+}
+
+.aboutus-bg._1.vh100 {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.aboutus-bg._1.vh100.bg-bottom {
+  background-image: url('../images/vrbg.png'), url('../images/about-bg.png');
+  background-position: 100% 100%, 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25%, auto;
+  padding-bottom: 0;
 }
 
 .calendar-title {
@@ -1629,6 +1625,40 @@
   font-size: 26px;
 }
 
+.div-block-32 {
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.div-block-33 {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-item-2 {
+  margin-bottom: 10px;
+}
+
+.list-item-3 {
+  margin-bottom: 20px;
+}
+
+.list-item-4 {
+  list-style-type: none;
+}
+
+.list {
+  list-style-type: lower-roman;
+}
+
+.lista {
+  list-style-type: lower-alpha;
+}
+
 @media screen and (min-width: 1920px) {
   .home-bg {
     background-image: url('../images/bg1.png');
@@ -1720,6 +1750,11 @@
 
   .heading-4 {
     font-weight: 400;
+  }
+
+  .aboutus-bg._1.vh100.bg-bottom {
+    background-position: 100% 100%, 50%;
+    background-size: 25%, contain;
   }
 
   .thank-bg {
@@ -1907,13 +1942,17 @@
     display: none;
   }
 
-  .h1-70px {
+  .h1-70px, .h1-70px.text-center._1 {
     font-size: 40px;
   }
 
   .page-subtitle.mt-50 {
     margin-top: 40px;
     font-size: 20px;
+  }
+
+  .page-subtitle.mt-50.font-20px.text-center._1 {
+    font-size: 16px;
   }
 
   .contact-flex {
@@ -1926,6 +1965,14 @@
 
   .aboutus-bg {
     background-size: contain;
+  }
+
+  .aboutus-bg._1 {
+    height: auto;
+  }
+
+  .aboutus-bg._1.vh100.bg-bottom {
+    background-size: 25%, contain;
   }
 
   .footer-menu {
@@ -2108,6 +2155,10 @@
     font-size: 40px;
   }
 
+  .h1-70px.text-center._1 {
+    font-size: 30px;
+  }
+
   .page-subtitle.mt-50 {
     margin-top: 30px;
     font-size: 16px;
@@ -2125,6 +2176,10 @@
 
   .eng-title {
     font-size: 20px;
+  }
+
+  .aboutus-bg._1.vh100.bg-bottom {
+    background-size: 25%, contain;
   }
 
   .calendar-title {
