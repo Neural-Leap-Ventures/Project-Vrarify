@@ -3,15 +3,9 @@ require('dotenv').config();
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
-const success_url = process.env.SUCCESS_URL;
+const success_url = "https://www.vrarify.com/kickoff-call-alex";
 const cancel_url = "https://vrarify.com/7-day-free-trial";
-const payment_options = process.env.PAYMENT_OPTIONS.split(',')
-
-console.log('ddd')
-console.log(success_url);
-console.log(payment_options);
-console.log('ddd')
-
+const payment_options = [us_bank_account,card]
 
 exports.handler = async (event, context) => {
     const requestBody = JSON.parse(event.body);
