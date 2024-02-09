@@ -130,7 +130,7 @@
         button.addEventListener("click", function () {
           const trialDays = button.getAttribute("trial_days");
           const lookupKey = button.getAttribute("lookupkey");
-          fetch("/.netlify/functions/create-checkout-session", {
+          fetch("/.netlify/functions/checkout-session", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
