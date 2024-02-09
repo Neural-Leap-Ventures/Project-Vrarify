@@ -15,6 +15,8 @@ exports.handler = async (event, context) => {
         expand: ['data.product'],
     });
 
+    console.log("Prices: " + prices)
+
     try {
         if (trial_days == 0) {
             const session = await stripe.checkout.sessions.create({
