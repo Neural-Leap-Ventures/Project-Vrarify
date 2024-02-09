@@ -4,7 +4,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const success_url = "https://www.vrarify.com/kickoff-call-alex";
 const cancel_url = "https://vrarify.com/7-day-free-trial-financing";
-const payment_options = [us_bank_account];
+const payment_options = ["us_bank_account"];
 
 exports.handler = async (event, context) => {
     const requestBody = JSON.parse(event.body);
